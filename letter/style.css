@@ -1,0 +1,28 @@
+body
+{
+    
+    margin: 40px;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.address { 
+    display: block;
+    font-style: italic;
+    font-weight: 500;
+  } 
+
+
+.container{
+    /* border: 1px solid black; */
+   
+}
+
+.right {
+    text-align: end;
+   
+  
+
+}
+
+

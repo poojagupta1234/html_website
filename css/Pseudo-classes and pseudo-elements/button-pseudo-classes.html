@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button pseudo-classes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: aquamarine;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .box {
+            width: 100%;
+            height: 100vh;
+            background-color: #bbc0c2;
+            display: flex;
+            /* justify-content: space-evenly; */
+            align-items: center;
+            flex-direction: column;
+
+
+        }
+
+        .btn1,
+        .btn2,
+        .btn3,
+        .btn4,
+        .btn5 {
+            width: 200px;
+            height: 50px;
+            background-color: #f0f4f7;
+            border: 2px solid #0a0d10;
+            font-size: 1rem;
+            color: #040303;
+            cursor: pointer;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            position: relative;
+            border-radius: 5px;
+            z-index: 1;
+            overflow: hidden;
+            margin: 10px;
+
+        }
+
+        .btn1:hover::before {
+            transform: translate(0);
+
+        }
+
+        .btn1:hover::before {
+            transform: translate(0);
+
+        }
+
+        .btn1:hover {
+            color: #f0f4f7;
+            border-color: 2px solid #bbc0c2;
+        }
+
+        .btn1::before {
+            content: "";
+            background-color: green;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            transform: translate(-90%);
+            transition: .5s all ease;
+
+        }
+
+        .btn2::before {
+            content: "";
+            background-color: rgb(212, 64, 64);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            transform: translate(-100%);
+            transition: .5s all ease;
+
+        }
+
+        .btn2::after {
+            content: "";
+            background-color: rgb(212, 64, 64);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            transform: translate(100%);
+            transition: .5s all ease;
+
+        }
+
+        .btn2:hover::after {
+            transform: translate(50%);
+        }
+
+        .btn2:hover::before {
+            transform: translate(-50%);
+        }
+
+        .btn3::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: pink;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: translateX(-50%);
+            transition: .5s all ease;
+        }
+
+        .btn3::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: pink;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: translateX(50%);
+            transition: .5s all ease;
+        }
+
+        .btn3:hover::before {
+            transform: translateX(-100%);
+        }
+
+        .btn3:hover::after {
+            transform: translateX(100%);
+        }
+
+        .btn4::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: rgb(230, 44, 20);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: translateY(-50%);
+            transition: .5s all ease;
+        }
+
+        .btn4::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: rgb(41, 238, 38);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: translateY(50%);
+            transition: .5s all ease;
+        }
+
+        .btn4:hover::before {
+            transform: translateY(-100%);
+        }
+
+        .btn4:hover::after {
+            transform: translateY(100%);
+        }
+
+        /* for button 5  */
+
+        .btn5::before {
+            content: "";
+            width: 50%;
+            height: 100%;
+            background-color: rgb(230, 44, 20);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: translateX(-100%);
+            transition: .5s all ease;
+        }
+
+        .btn5::after {
+            content: "";
+            width: 50%;
+            height: 100%;
+            background-color: rgb(41, 238, 38);
+            position: absolute;
+            top: 0;
+            left: 50%;
+            z-index: -1;
+            transform: translateX(100%);
+            transition: .5s all ease;
+        }
+
+        .btn5:hover::before {
+            transform: translateX(0%) rotate(180deg);
+        }
+
+        .btn5:hover::after {
+            transform: translateX(0%) rotate(-180deg);
+        }
+
+        .logo {
+            width: 300px;
+            height: 500px;
+            overflow: hidden;
+            border: 1px solid #000;
+            border-radius: 10px;
+            box-shadow: -2px 2px 5px #000;
+            position: relative;
+        }
+
+        article,
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: .5s all ease;
+        }
+
+        article:hover img {
+            transform: scale(1.2);
+        }
+
+        article::before {
+            content: "Article";
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            color: blue;
+            transform: translateX(-50%) translateY(-250%);
+            font-size: 2rem;
+            z-index: 1;
+            transition: .5s all ease;
+
+        }
+
+        article:hover::before {
+            transform: translateX(-50%) translateY(0);
+            color: red;
+
+        }
+
+        article::after {
+            content: "Book is a very good friend. I love to read book because its give us more knowledge. I am very closed with books.";
+            position: absolute;
+            z-index: 1;
+            color: black;
+            background-color: pink;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+            padding: 10px;
+            transform: translateY(100%);
+            transition: .5s all ease;
+        }
+
+        article:hover::after {
+            transform: translateY(0);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <button class="btn1">Click 1</button>
+        <button class="btn2">Click 2</button>
+        <button class="btn3">Click 3</button>
+        <button class="btn4">Click 4</button>
+        <button class="btn5">Click 5</button>
+        <article class="logo">
+            <img src="/img/bird.png" alt="ss" class="logo-image">
+        </article>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+   box-sizing:border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.border {
+    border: 1px solid white;
+}
+
+.nav-bar {
+    background-color: black;
+    height: 60px;
+    display: flex;
+    color: rgb(23, 179, 196);
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.hoveClass:hover {
+  outline: 1px solid white;
+
+}
+
+.logo-bar {
+    display: flex;
+    flex-basis: 13%;
+    align-items: center;
+    justify-content: center;
+}
+.nav-logo {
+   height:50px;
+
+}
+.nav-logo img {
+   height:100%;
+  background-size: cover;
+    
+}
+
+.nav-address {
+    color: white;
+    padding:10px;
+    
+}
+.nav-account-option {
+    padding: 10px;
+}
+.nav-account-option:hover {
+  
+   outline: 1px solid white;
+   
+}
+.deliver-to {
+    color: white;
+    font-size: 14px;
+    padding-left: 15px;
+    
+}
+.location-icon {
+    color: white;
+    font-size: 16px;
+   font-weight: 700;
+    
+}
+.search-bar {
+    flex-basis: 65%;
+     /* border: 1px solid white; */
+     display: flex;
+      /* border: 3px solid  rgb(243, 168, 71); */
+      /* border-radius: 5px; */
+       box-shadow: 0 0 0 3px #F3A847, 0 0 0 3px rgba(243, 168, 71, 0.5); 
+      border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+        border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+.search-bar select {
+    width: 52px;
+    padding: 10px 0px 10px 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border:none;
+}
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    /* border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; */
+    border:none;
+    
+}
+
+.search-bar button {
+    background-color: #F3A847;
+    color: white;
+    padding:10px 13px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border:none;
+
+}
+.search-bar button i {
+    font-size: 20px;
+    color: black;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+.account-bar {
+    flex-basis: 25%;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+}
+
+.lang-select {
+    color: white;
+    font-size: 14px;
+   
+}
+.lang-select i {
+    padding-left: 5px;
+}
+
+.sign-in {
+    color: white;
+    font-size: 12px;
+}
+.account-list {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+.cart-icon i {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.nav-mid-line {
+    height: 40px;
+    background-color: #232F3E;
+}
+.lang-select a {
+    padding: 20px 10px;
+}
+/* ------------------------------------------------------------------------------------- */
+
+hr {
+    border: 3px solid;
+}
+

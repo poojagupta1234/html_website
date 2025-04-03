@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position </title>
+    <style>
+        .container {
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            margin: 0 auto;
+        }
+        .container-1 {
+            width: 200px;
+            height: 200px;
+            background-color: goldenrod;
+            margin: 0 auto;
+            position: relative;
+        }
+        .absoluteDiv {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 0, 0);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+        }
+        .green {
+            background-color: green;
+            position: relative;
+        }
+        .pink {
+            background-color: rgb(212, 57, 161);
+            position: absolute;
+            bottom: 50%;
+            right: 10px;
+        }
+        .yellow {
+            background-color: yellow;
+            position: static;
+        }
+        .blue {
+            background-color: blue;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+        .orange {
+            background-color: orange;
+            position: sticky;
+            top: 10px;
+            left: 50%;
+        }
+        .spacer {
+            height: 300vh;
+            background-color: rgb(0, 217, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Position</h1>
+    <div class="container">
+
+        <div class="box green">relative</div>
+        <div class="box pink">absulate</div> 
+        <div class="box yellow">static</div>
+         <div class="box blue">fixed</div>
+           <div class="box orange">sticky</div>
+    </div>
+      <div class="container-1">
+        <div class="absoluteDiv">absulate in side relative </div>
+      </div>
+    <div class="spacer"> 
+        <img src="https://image-placeholder.com/images/actual-size/57x57.png" /> </div>
+</body>
+</html>
