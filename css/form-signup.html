@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container { 
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient( rgba(139, 179, 194, 0.5), rgba(92, 182, 207, 0.5));
+        }
+        .inner-box {
+            width: 400px;
+            margin: 0 auto;
+            background-color: #f4f4f4;
+            position: relative;
+            top: 30%;
+            transform: translateY(-50%);
+            padding: 20px 40px;
+            border-radius: 8px;
+           
+
+        }
+        .sigun-up-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .sigun-up-header p {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+         <div class="inner-box">
+          
+            <header class="sigun-up-header"> 
+                 <h1>Sign Up</h1>
+            <p>Its just take 30 minutes</p>
+          </header>
+          <main class="main-form">
+            <form action="">
+                <label for="first-name">First Name</label>
+                <input type="text" placeholder="First Name" id="first-name" required>
+                <p>
+                <label for="last-name">Last Name</label>
+                <input type="text" placeholder="Last Name" id="last-name" required>
+                </p>
+               <p>
+                 <label for="email">Email</label>
+                <input type="email" placeholder="Email" id="email" required>
+               </p>
+               <p>
+                 <label for="password">Password</label>
+                <input type="password" placeholder="Password" id="password" required>
+               </p>
+               <p> 
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" id="confirm-password" required>
+                </p>
+               
+                <button>Sign Up</button>
+            </form>
+            </main>
+            <footer>
+                <p>This is example <a href="google.com">link</a></p>
+            </footer>
+
+         </div>
+       
+    </div>
+    
+</body>
+</html>

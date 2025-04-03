@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+    <style>
+        .header {
+            background-color: lightblue;
+            padding: 30px;
+            color: white;
+            display: flex;
+
+        }
+
+        .h1 {
+            flex: 3;
+            font-size: 35px;
+            text-align: center;
+        }
+
+        .img_bird {
+            width: 50px;
+
+        }
+
+        .section {
+            display: flex;
+        }
+
+        .navBar {
+            flex: 1;
+            background-color: aquamarine;
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 0;
+            padding: 10px;
+            background-color: lightgreen;
+            border: 1px solid black;
+
+
+        }
+
+        li:hover {
+            background-color: lightcoral;
+        }
+
+        .article {
+            flex: 3;
+            padding: 10px;
+            background-color: lightcoral;
+        }
+
+        .footer {
+            padding: 10px;
+            background-color: lightblue;
+            text-align: center;
+            color: white;
+            font-size: large;
+        }
+
+        .footer,
+        p {
+            font-size: 20px;
+        }
+
+        .article-content {
+            display: flex;
+
+        }
+
+        .details {
+            padding: 0 10px;
+            font-size: 20px;
+
+        }
+
+        @media screen and (max-width: 600px) {
+            .section {
+                flex-direction: column;
+            }
+
+            .navBar {
+                order: 1;
+            }
+
+            .article {
+                order: 2;
+            }
+
+            .article-content {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .details {
+                padding: 0;
+                font-size: 20px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="img_bird">
+            <img src="../img/bird.png" alt="girl" style="max-width:100%;height:auto;">
+        </div>
+        <div class="h1">Cities</div>
+
+    </header>
+    <section class="section">
+
+        <nav class="navBar">
+            <ul>
+                <li><a href="#">Delhi</a></li>
+                <li><a href="#">Mumbai</a></li>
+                <li><a href="#">Kolkata</a></li>
+                <li><a href="#">Chennai</a></li>
+            </ul>
+        </nav>
+        <article class="article">
+            <h2>Delhi</h2>
+            <div class="article-content">
+                <picture>
+                    <source srcset="./img_smallflower.jpg" media="(max-width: 600px)">
+                    <source srcset="./img_flowers.jpg" media="(max-width: 1200px)" style="max-width:100%;height:auto;">
+                    <img src="../img/img_flowers.jpg" alt="Delhi" style="width:auto;">
+                </picture>
+                <div class="details">Delhi is the capital city of India.
+                    It is situated in the northern part of the country. It is a city of historical importance. There are
+                    many historical monuments in Delhi. The Red Fort, Qutub Minar, India Gate, and Lotus Temple are some
+                    of
+                    the famous monuments in Delhi. Delhi is also famous for its street food. The city has a rich culture
+                    and
+                    heritage. The people of Delhi are known for their hospitality. The city is well connected by road,
+                    rail,
+                    and air. The Indira Gandhi International Airport is the main airport in Delhi. The city has a good
+                    network of public transport. The Delhi Metro is one of the best metro systems in the world. The city
+                    has
+                    a good education system with many reputed schools and colleges. Delhi is a vibrant city with a mix
+                    of
+                    modernity and tradition.
+                </div>
+            </div>
+
+        </article>
+    </section>
+    <footer class="footer">
+        <p>Footer</p>
+    </footer>
+</body>
+
+</html>

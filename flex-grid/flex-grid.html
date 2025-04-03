@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            
+            display: grid;
+            gap:10px;
+            border: 5px solid red;
+            grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr 1fr;
+        }
+
+        .items {
+            border:2px solid green;
+        }
+        hr {
+            padding: 10px;
+        }
+        .grid-container {
+            display: inline-grid;
+            gap:10px;
+            border: 5px solid red;
+            grid-template-columns:
+            1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr 1fr;
+        }
+        .grid-items {
+            border:2px solid green;
+        }
+        .grid-container-columns {
+            display: grid;
+            column-gap: 20px;
+            grid-template-columns: 1fr 1fr;;
+            border: 5px solid red;
+           
+        }
+        .grid-items-columns {
+            border:2px solid blueviolet;
+            padding: 10px;
+            background-color: aliceblue;
+    }
+
+        
+
+    .grid-container-rows {
+        display: grid;
+        row-gap: 20px;
+        grid-template-columns: 1fr;
+        border: 5px solid red;
+        background-color: #2be253;
+    }
+    .grid-items-rows {
+        border:1px solid #2be253;
+        padding: 5px;
+        background-color: aliceblue;
+    }
+        </style>
+</head>
+<body>
+    <h4>Grid black elment use : display:grid </h4>
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div>
+        <div class="items">10</div>
+        <div class="items">11</div>
+        <div class="items">12</div>
+    </div>
+    <hr>
+    <h4>Grid inline elment use : display:inline-grid</h4>
+    <div class="grid-container">
+        <div class="grid-items">1</div>
+        <div class="grid-items">2</div>
+        <div class="grid-items">3</div>
+        <div class="grid-items">4</div>
+        <div class="grid-items">5</div>
+        <div class="grid-items">6</div>
+        <div class="grid-items">7</div>
+        <div class="grid-items">8</div>
+        <div class="grid-items">9</div>
+        <div class="grid-items">10</div>
+        <div class="grid-items">11</div>
+        <div class="grid-items">12</div>
+
+    </div>
+
+    <hr>
+    <h4>Grid columns gap:  column-gap :20px </h4>
+    <div class="grid-container-columns">
+        <div class="grid-items-columns">1</div>
+        <div class="grid-items-columns">2</div>
+        <div class="grid-items-columns">3</div>
+        <div class="grid-items-columns">4</div>
+        <div class="grid-items-columns">5</div>
+        <div class="grid-items-columns">6</div>
+        <div class="grid-items-columns">7</div>
+        <div class="grid-items-columns">8</div>
+       
+
+    </div>
+    <hr>
+    <h4>Grid row gap:  row-gap :20px </h4>
+    <div class="grid-container-rows">
+        <div class="grid-items-rows">1</div>
+        <div class="grid-items-rows">2</div>
+        <div class="grid-items-rows">3</div>
+        <div class="grid-items-rows">4</div>
+        <div class="grid-items-rows">5</div>
+        <div class="grid-items-rows">6</div>
+        <div class="grid-items-rows">7</div>
+        <div class="grid-items-rows">8</div>
+       
+
+    </div>
+</body>
+</html>
