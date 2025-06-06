@@ -3,21 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="form-shiping.css">
+    <meta name="description" content="A simple HTML and CSS website showcasing various designs and layouts.">
+    <meta name="keywords" content="HTML, CSS, web design, responsive design, sticky header, media">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="index, follow">
     <title>Document</title>
-    <style>
-        input[type="text"]:disabled {
-            background: #eee;
-            border: 1px solid #ccc;
-        }
-
-        label:has(+ :disabled) {
-  color: #aaa;
-}
-.required::after{
-  content: "*";
-  color: red;
-}
-    </style>
+   
 </head>
 <body>
     <form>
@@ -61,23 +54,7 @@
         </fieldset>
         <div><button>Submit</button></div>
         </form>
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                document.querySelector("#billing-checkbox").addEventListener("change", toggleBilling)
-            }, false)
-
-            function toggleBilling(){
-             
-                const billingItems =document.querySelectorAll("#billing input[type='text']");
-              //  console.log("billingItems",billingItems);
-
-                for (let i = 0; i < billingItems.length; i++) {
-                    const element = billingItems[i];
-                    console.log("element",element);
-                    element.disabled = !element.disabled;
-                }
-            }
-            
-        </script>
+       
 </body>
+<script src="form.js"></script>
 </html>

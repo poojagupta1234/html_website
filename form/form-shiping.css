@@ -1,0 +1,14 @@
+
+        input[type="text"]:disabled {
+            background: #eee;
+            border: 1px solid #ccc;
+        }
+
+        label:has(+ :disabled) {
+  color: #aaa;
+}
+.required::after{
+  content: "*";
+  color: red;
+}
+    

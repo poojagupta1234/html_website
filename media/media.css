@@ -1,0 +1,21 @@
+ 
+        @media screen and (min-width: 600px) {
+            body {
+                background-color: lightgreen;
+            }
+            
+        }   
+
+        @media screen and (min-width: 900px){
+        body {
+            background-color: lightblue;
+            }
+        }
+
+        @media screen and (hover: hover){
+            p:hover {
+                color: red;
+                
+
+            }
+        }

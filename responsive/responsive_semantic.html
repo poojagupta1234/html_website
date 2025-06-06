@@ -4,117 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <meta name="description" content="A simple HTML and CSS website showcasing various designs and layouts.">
+    <meta name="keywords" content="HTML, CSS, web design, responsive design, sticky header, media">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="index, follow">
     <title>responsive</title>
-    <style>
-        .header {
-            background-color: lightblue;
-            padding: 30px;
-            color: white;
-            display: flex;
-
-        }
-
-        .h1 {
-            flex: 3;
-            font-size: 35px;
-            text-align: center;
-        }
-
-        .img_bird {
-            width: 50px;
-
-        }
-
-        .section {
-            display: flex;
-        }
-
-        .navBar {
-            flex: 1;
-            background-color: aquamarine;
-            padding: 20px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin: 0;
-            padding: 10px;
-            background-color: lightgreen;
-            border: 1px solid black;
-
-
-        }
-
-        li:hover {
-            background-color: lightcoral;
-        }
-
-        .article {
-            flex: 3;
-            padding: 10px;
-            background-color: lightcoral;
-        }
-
-        .footer {
-            padding: 10px;
-            background-color: lightblue;
-            text-align: center;
-            color: white;
-            font-size: large;
-        }
-
-        .footer,
-        p {
-            font-size: 20px;
-        }
-
-        .article-content {
-            display: flex;
-
-        }
-
-        .details {
-            padding: 0 10px;
-            font-size: 20px;
-
-        }
-
-        @media screen and (max-width: 600px) {
-            .section {
-                flex-direction: column;
-            }
-
-            .navBar {
-                order: 1;
-            }
-
-            .article {
-                order: 2;
-            }
-
-            .article-content {
-                display: flex;
-                flex-direction: column;
-
-            }
-
-            .details {
-                padding: 0;
-                font-size: 20px;
-
-            }
-        }
-    </style>
+  
 </head>
 
 <body>
     <header class="header">
         <div class="img_bird">
-            <img src="../img/bird.png" alt="girl" style="max-width:100%;height:auto;">
+            <img src="../img/bird.png" alt="bird" style="max-width:100%;height:auto;">
         </div>
         <div class="h1">Cities</div>
 
@@ -135,7 +38,7 @@
                 <picture>
                     <source srcset="./img_smallflower.jpg" media="(max-width: 600px)">
                     <source srcset="./img_flowers.jpg" media="(max-width: 1200px)" style="max-width:100%;height:auto;">
-                    <img src="../img/img_flowers.jpg" alt="Delhi" style="width:auto;">
+                    <img src="../img/img_flowers.jpg" alt="flower" style="width:auto;">
                 </picture>
                 <div class="details">Delhi is the capital city of India.
                     It is situated in the northern part of the country. It is a city of historical importance. There are

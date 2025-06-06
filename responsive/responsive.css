@@ -1,0 +1,104 @@
+
+        .header {
+            background-color: lightblue;
+            padding: 30px;
+            color: white;
+            display: flex;
+
+        }
+
+        .h1 {
+            flex: 3;
+            font-size: 35px;
+            text-align: center;
+        }
+
+        .img_bird {
+            width: 50px;
+
+        }
+
+        .section {
+            display: flex;
+        }
+
+        .navBar {
+            flex: 1;
+            background-color: aquamarine;
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 0;
+            padding: 10px;
+            background-color: lightgreen;
+            border: 1px solid black;
+
+
+        }
+
+        li:hover {
+            background-color: lightcoral;
+        }
+
+        .article {
+            flex: 3;
+            padding: 10px;
+            background-color: lightcoral;
+        }
+
+        .footer {
+            padding: 10px;
+            background-color: lightblue;
+            text-align: center;
+            color: white;
+            font-size: large;
+        }
+
+        .footer,
+        p {
+            font-size: 20px;
+        }
+
+        .article-content {
+            display: flex;
+
+        }
+
+        .details {
+            padding: 0 10px;
+            font-size: 20px;
+
+        }
+
+        @media screen and (max-width: 600px) {
+            .section {
+                flex-direction: column;
+            }
+
+            .navBar {
+                order: 1;
+            }
+
+            .article {
+                order: 2;
+            }
+
+            .article-content {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .details {
+                padding: 0;
+                font-size: 20px;
+
+            }
+        }
+  
